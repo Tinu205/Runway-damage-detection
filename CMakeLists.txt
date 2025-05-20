@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(runway_detection)
+find_package(OpenCV REQUIRED)
+add_executable(proj proj.cpp)
+target_link_libraries(proj ${OpenCV_LIBS})
